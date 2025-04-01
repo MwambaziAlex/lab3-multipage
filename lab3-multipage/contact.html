@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | XNDR Cybersecurity</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/logo.jpeg" alt="XNDR Logo">
+                <h1>XNDR</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-header">
+            <h2>Get in Touch</h2>
+            <p>Our security experts are ready to help protect your business</p>
+        </section>
+
+        <section class="contact-form">
+            <form id="contactForm" action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Your name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <select id="subject" name="subject" required>
+                        <option value="" disabled selected>Select a topic</option>
+                        <option value="consultation">Security Consultation</option>
+                        <option value="emergency">Incident Response</option>
+                        <option value="training">Employee Training</option>
+                        <option value="other">Other Inquiry</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required minlength="20" placeholder="Tell us about your security needs"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </div>
+            </form>
+
+            <div class="contact-info">
+                <h3>Other Ways to Reach Us</h3>
+                <p><i class="fas fa-phone"></i> +260 950-098-665</p>
+                <p><i class="fas fa-envelope"></i> security@xndr.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Cyber Lane, Security City, SC 90210</p>
+                
+                <div class="emergency-notice">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <p>For immediate security incidents, call our 24/7 response line: +260 975-419-921</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 XNDR Cybersecurity. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
